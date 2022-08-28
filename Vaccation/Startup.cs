@@ -13,6 +13,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using VaccationApi.Data;
+using VaccationApi.Services;
 
 namespace Vaccation
 {
@@ -35,7 +36,8 @@ namespace Vaccation
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Vaccation", Version = "v1" });
             });
             services.AddDbContext<DataContext>(x => x.UseSqlServer(Configuration.GetConnectionString("ConStr")));
-
+            services.AddScoped<ITypeService,TypeService>();
+            services.AddScoped<IDaysService, DaysService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
