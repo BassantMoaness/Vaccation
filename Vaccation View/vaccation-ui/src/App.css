@@ -1,0 +1,221 @@
+
+
+.WindowDiv{
+  height: 685px;
+  width: 40%;
+  border: 1px solid gray;
+  margin: 3%;
+  }
+
+.HeaderDiv{
+  height: 25px;
+  width: 100%;
+  position: relative;
+} 
+
+ .buttons {
+  position: absolute;
+  right: 0;
+  top: 9px;
+}
+
+.buttons span {
+  border-left: 1px solid #ccc;
+  padding: 8px 20px;
+  cursor: pointer;
+}
+
+ .buttons span:hover {
+  background: #eee;
+}
+
+.FormTitle{
+  color: gray;
+  font-size: 15px;
+    margin-left: 5px;
+}  
+
+.UnderLine{
+  width:'100%';
+  color:gray;
+}
+
+.Section {
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-top: 4%;
+  margin: 9% 4%;
+}
+
+.label {
+  position: relative;
+  width: fit-content;
+  top: -10px;
+  left: 20px;
+  background-color: white;
+  border: 2px solid gray;
+  background-color:rgb(35 162 235);
+  color: white;
+  text-align: center;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.VaccationType{
+  height: 110px;
+}
+
+.TypeSelectison{
+  width: 45%;
+display: inline-block;
+margin-left: 10px;
+}
+
+.TypeDivStyle{
+    text-align: center;
+    width: 65%;
+    margin-left: 15%;
+    margin-top: 3%;
+}
+
+.TypeSpan{
+  margin-right: 10%;
+  font-size: 13px;
+  color: gray;
+
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 13px !important;
+  line-height: 1.42857143;
+  color: gray!important ;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+
+.RequestDetails{
+  height: 180px;
+}
+.Balance{
+  height: 170px;
+}
+
+
+.styled-select {
+  width: 100px;
+  height: 17px;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background: url('./images/downarrow_blue.png.png') no-repeat right white;
+  border: 2px double red;
+  display: inline-block;
+  position: relative;
+}
+
+.styled-select select {
+  background: transparent;
+  -webkit-appearance: none;
+  width: 100px;
+  font-size: 11px;
+  border: 0;
+  height: 17px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+input [placeholder="Select date"]{
+  width: 100%;
+}
+.DateInput{
+  display: flex;
+  margin-top: 1%;
+  display: flex;
+  align-items: center;
+  /* width: 50%; */
+  text-align: center;
+  }
+.DateInput input{
+  display: block;
+  width: 75%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.DateDiv{
+  display: flex;
+  align-items: center;
+  width: 50%;
+  text-align: center;
+}
+
+.DateSpan{
+  font-size: 13px;
+  color: gray;
+  width: 40%;
+
+}
+
+.InputStyle{
+  width: 75% !important;
+    margin-right:25%;
+    margin-top: 3%;
+}
+
+.SubmitBtn{
+  background: blue;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid white;
+  font-size: 11px;
+  width: 70px;
+  height: 33px;
+  margin: 4%;
+}
+
+.DaysIput{
+  width: 49%;
+}
+
+.BalanceTable{
+  border: 1px solid gray;
+    font-size: 13px;
+    color: gray;
+    width: 25%;
+
+    text-align: center;
+    margin-left: 35%;
+}
+
+tr th{
+  height: 40px;
+    font-size: 13px;
+    border: 1px solid gray;
+    color: gray;
+   
+}
+
+
+
