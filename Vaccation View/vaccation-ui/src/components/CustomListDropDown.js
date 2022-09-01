@@ -7,9 +7,8 @@ export const CustomDropdown = (props) => (
       name="{props.value}"
       onChange={props.onChange}
     >
-      <option defaultValue>Select {props.name}</option>
       {props.options.map((item, index) => (
-        <option key={item.key} value={item.value}>
+        <option key={item.key} value={item.key}>
           {item.value}
         </option>
       ))}
@@ -22,18 +21,32 @@ export default class CustomListDropDown extends React.Component {
     this.state = {
       collection: [],
       value: '',
+      key:0,
     }
   }
   componentDidMount() {
-    
-    // fetch('https://localhost/VaccationApi/api/')
-    //   .then((response) => response.json())
-    //   .then((res) => this.setState({ collection: res }))
-    var types=[{key:1,value:'Annual'},{key:2,value:'Sick'}];
-    this.setState({collection: types });
+    var url='/api/Days/GetReminderVaccationDaysByUserId/1';
+    fetch('https://localhost/VaccationApi/api/api/Type/GetAllTypes')
+      .then((response) => response.json())
+      .then((res) => this.setState({ collection: res }))
+
+
+      if (this.state.collection.length == 0) {
+        var types = [{ key: 1, value: 'Annual' }, { key: 2, value: 'Sick' }];
+        this.setState({ collection: types });
+    }
+
   }
+
+
+
+
   onChange = (event) => {
-    this.setState({ value: event.target.value })
+    this.setState({ 
+        value: event.target.value ,
+        key: event.target.key
+
+    })
   }
   render() {
     return (
@@ -44,6 +57,7 @@ export default class CustomListDropDown extends React.Component {
           name={this.state.value}
           options={this.state.collection}
           onChange={this.onChange}
+         // value={this.state.key}
         />
         </div>
       </div>
